@@ -12,6 +12,7 @@ body {
 }
 
 h1 {
+	margin: 0.8% 0;
 	font-size: 124px;
 	font-weight: 400;
 	line-height: 124px;
@@ -59,11 +60,7 @@ a {
 /* HEADER */
 
 header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 50;
-	width: 100vw;
+	width: 100%;
 	background-color: #000000;	
 }
 header:before {
@@ -121,7 +118,6 @@ header:before {
 /* SERVICE */
 
 .service-heading {
-	padding-top: 174px;
 	color: #333333;
 	text-align: left;
 }
@@ -140,7 +136,9 @@ header:before {
 .service-item {
 	margin-top: 20px;
 	padding: 20px 32px;
-	width: 225px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 225px	;
+	        flex: 0 1 225px	;
 	border: 1px solid #e4e4e4;
 }
 .service-item:first-child {
@@ -198,8 +196,9 @@ header:before {
 
 .team-item {
 	margin-top: 20px;
-	-ms-flex-preferred-size: 225px;
-	    flex-basis: 225px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 225px;
+	        flex: 0 1 225px;
 }
 .team-item:first-child {
 	margin-left: 0;
@@ -260,8 +259,9 @@ header:before {
 }
 
 .info-item {
-	-ms-flex-preferred-size: 225px;
-	    flex-basis: 225px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 225px;
+	        flex: 0 1 225px;
 }
 .info-item:first-child {
 	margin-left: 0;
@@ -324,18 +324,14 @@ header:before {
 .message {
 	height: 80px;
 }
-.btn {
-	width: 75px;
-	border-radius: 7px;
-	background-color: #40aed7;
-	height: 35px;
-}
-.btn__link {
-	display: block;
+.btn-submit {
+	padding: 7px 11px;
 	color: #fff;
-	padding: 13px 11px;
-	font-size: 12px;
-	font-weight: 400;
+	background-color: #40aed7;
+	border-color: #40aed7;
+	font-size: 11px;
+	border-style: none;
+	border-radius: 7px;
 	text-transform: uppercase;
 }
 
@@ -383,27 +379,14 @@ footer {
 	    line-height: 109px;
 	}
 
-	.service-heading {
-		padding-top: 304px;
-	}
-
 	.info-item__title {
 		padding: 26px 0 12px;
 	}
 }
 @media (max-width: 490px) {
 	h1 {
-	    font-size: 75px;
-	    line-height: 69px;
-	}
-
-	.service-heading {
-		padding-top: 300px;
-		margin-bottom: 10px;
-	}
-	.team-heading {
-		padding-top: 14px;
-	    padding-bottom: 10px;
+	    font-size: 62px;
+	    line-height: 67px;
 	}
 
 	.service-item,
