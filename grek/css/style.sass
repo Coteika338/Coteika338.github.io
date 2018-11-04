@@ -8,6 +8,10 @@ body
     background-color: #0c5080
     margin: 0
 
+button
+    border: none
+    outline: none
+
 .container
     max-width: 1140px
     padding: 0 15px
@@ -32,14 +36,14 @@ h2
     font-family: 'Roboto', sans-serif
     font-weight: bold
     font-style: italic
-    font-size: 26px
+    font-size: 28px
     text-align: center
     color: #ffffff
     margin: 70px 0
 h3
     font-family: 'Roboto', sans-serif
     font-weight: bold
-    font-size: 20px
+    font-size: 26px
     line-height: 20px
     text-align: center
     color: #ffffff
@@ -131,7 +135,7 @@ nav
     &-item
         margin-right: 10%
         font-family: 'Roboto', sans-serif
-        font-size: 16px
+        font-size: 20px
         font-weight: bold
         font-style: italic
         &:last-child
@@ -139,6 +143,7 @@ nav
         a
             color: #ffffff
             text-decoration: none
+            transition: all 0.1s
             &:hover
                 color: #000000
 
@@ -208,8 +213,10 @@ nav
     box-shadow: inset 0px 0px 100px rgba(0,0,0,0.5), 0px 0px 35px 0px #000000
     height: 80vh
     margin-top: 30px
-    &-title
-        padding-top: 25vh
+    display: flex
+    flex-direction: column 
+    align-items: center
+    justify-content: center
     &-button
         text-align: center
     &-button button
@@ -325,13 +332,13 @@ footer
         font-size: 25px
     h1.rus
         font-size: 16px
-
+        line-height: 17px
     h3
-        font-size: 18px
+        font-size: 16px
 
     .navigation-list-item
-        font-size: 14px
-        margin-right: 5px
+        font-size: 12px
+        margin-right: 10px
     
     .training-button-item__hover
         font-size: 14px
@@ -340,5 +347,8 @@ footer
 
     .slider-item img
         height: 20vh
+
+    .slick-arrow 
+        font-size: 20px
 
 
