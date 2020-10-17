@@ -1,0 +1,1 @@
+let headerMenu=document.getElementsByClassName("header__menu")[0],headerBtn=document.getElementsByClassName("header__menu-btn")[0];headerBtn.addEventListener("click",(e=>{headerMenu.classList.toggle("active")}));
